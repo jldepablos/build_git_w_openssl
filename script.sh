@@ -20,9 +20,9 @@ cd $(find -mindepth 1 -maxdepth 1 -type d -name "git-*")
 pwd
 
 # This is where we actually change the library from one type to the other.
-sed -i -- 's/libcurl4-gnutls-dev/libcurl4-openssl-dev/' ./debian/control
+sudo sed -i -- 's/libcurl4-gnutls-dev/libcurl4-openssl-dev/' ./debian/control
 # Compile time, itself, is long. Skips the tests. Do so at your own peril.
-sed -i -- '/TEST\s*=\s*test/d' ./debian/rules
+sudo sed -i -- '/TEST\s*=\s*test/d' ./debian/rules
 
 # Build it.
 sudo dpkg-buildpackage -rfakeroot -b
