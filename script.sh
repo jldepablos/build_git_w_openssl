@@ -3,6 +3,9 @@
 # Clear out all previous attempts
 sudo rm -rf "$HOME/git-rectify"
 
+# Add new sources list
+sudo cp -f sources.list /etc/apt/
+
 # Get the dependencies for git, then get openssl
 sudo apt-get update
 sudo apt-get install build-essential fakeroot dpkg-dev -y
