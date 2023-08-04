@@ -8,7 +8,7 @@ sudo apt-get update
 sudo apt-get install build-essential fakeroot dpkg-dev -y
 sudo mkdir -p "$HOME/git-rectify"
 cd "$HOME/git-rectify"
-apt-get source git
+sudo apt-get source git
 sudo apt-get build-dep git -y
 sudo apt-get install libcurl4-openssl-dev -y
 dpkg-source -x $(find -mindepth 1 -maxdepth 1 -type f -name "*.dsc")
