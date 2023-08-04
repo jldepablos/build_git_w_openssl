@@ -12,7 +12,7 @@ sudo apt-get source git
 sudo apt-get build-dep git -y
 sudo apt-get install libcurl4-openssl-dev -y
 sudo rm -rf $(find -mindepth 1 -maxdepth 1 -type d -name "git-*")
-dpkg-source -x $(find -mindepth 1 -maxdepth 1 -type f -name "*.dsc")
+sudo dpkg-source -x $(find -mindepth 1 -maxdepth 1 -type f -name "*.dsc")
 
 # We need to actually go into the git source directory
 # find -type f -name "*.dsc" -exec dpkg-source -x \{\} \;
