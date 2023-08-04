@@ -4,6 +4,7 @@
 #sudo rm -rf "$HOME/git-rectify"
 
 # Get the dependencies for git, then get openssl
+sudo apt-get update
 sudo apt-get install build-essential fakeroot dpkg-dev -y
 sudo mkdir -p "$HOME/git-rectify"
 cd "$HOME/git-rectify"
