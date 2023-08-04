@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Clear out all previous attempts
-#sudo rm -rf "$HOME/git-rectify"
+sudo rm -rf "$HOME/git-rectify"
 
 # Get the dependencies for git, then get openssl
 sudo apt-get update
