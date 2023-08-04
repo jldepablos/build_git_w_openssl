@@ -28,4 +28,4 @@ sudo sed -i -- '/TEST\s*=\s*test/d' ./debian/rules
 sudo dpkg-buildpackage -rfakeroot -b
 
 # Install
-find .. -type f -name "git_*amd64.deb" -exec sudo dpkg -i \{\} \;
+sudo find .. -type f -name "git_*64.deb" -exec sudo dpkg -i \{\} \;
